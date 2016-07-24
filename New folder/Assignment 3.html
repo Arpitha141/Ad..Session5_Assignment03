@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Index for a list</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<body>  
+<ui>  
+<li>Html Tutorial</li>  
+<li>Mongodb Tutorial</li>  
+<li>Python Tutorial</li>  
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$( 'li' ).each(function( index, elem ) {  
+    $( elem ).prepend( '<b>' + index + ': </b>' );  
+		});
+	});
+</script>
+
+</body>
+</html>
